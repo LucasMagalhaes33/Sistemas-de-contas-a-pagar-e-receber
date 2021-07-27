@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="PagarReceber"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0"/>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="FCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="zcomponent"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="13">
+      <Unit0>
+        <Filename Value="PagarReceber.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPrincipal"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uzeosglobal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="zeosGlobal"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="ucliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCliente"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCliente"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="ufornecedor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFornecedor"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFornecedor"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="ubanco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBanco"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uBanco"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="ucartorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCartorio"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCartorio"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="uplanoconta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPlanoConta"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPlanoConta"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="ulancamentos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLancamento"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uLancamentos"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="udespesa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDespesas"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDespesa"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="upagamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPagamento"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPagamento"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="urecebimento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRecebimento"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRecebimento"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="uremessa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRemessa"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRemessa"/>
+      </Unit12>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="PagarReceber"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

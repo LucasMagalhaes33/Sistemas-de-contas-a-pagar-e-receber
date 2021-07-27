@@ -1,0 +1,796 @@
+object zeosGlobal: TzeosGlobal
+  Left = 262
+  Height = 383
+  Top = 127
+  Width = 734
+  Caption = 'zeosGlobal'
+  LCLVersion = '2.0.12.0'
+  object zConexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3050
+    Database = 'C:\Users\dosplasticos\Documents\lazarus\ContasPeR\Dados\DADOS.FDB'
+    User = 'SYSDBA'
+    Password = 'masterkey'
+    Protocol = 'firebird-3.0'
+    Left = 328
+    Top = 40
+  end
+  object sqlCliente: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from CLIENTES'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 32
+    Top = 112
+    object sqlClienteCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlClienteNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlClienteENDERECO: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDERECO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlClienteBAIRRO: TStringField
+      FieldKind = fkData
+      FieldName = 'BAIRRO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object sqlClienteCIDADE: TStringField
+      FieldKind = fkData
+      FieldName = 'CIDADE'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlClienteUF: TStringField
+      FieldKind = fkData
+      FieldName = 'UF'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 2
+    end
+    object sqlClienteCEP: TStringField
+      FieldKind = fkData
+      FieldName = 'CEP'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object sqlClienteTELEFONE: TStringField
+      FieldKind = fkData
+      FieldName = 'TELEFONE'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+  end
+  object sqlFornecedor: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from FORNECEDORES'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 104
+    Top = 112
+    object sqlFornecedorCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlFornecedorNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlFornecedorENDERECO: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDERECO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlFornecedorBAIRRO: TStringField
+      FieldKind = fkData
+      FieldName = 'BAIRRO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object sqlFornecedorCIDADE: TStringField
+      FieldKind = fkData
+      FieldName = 'CIDADE'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlFornecedorUF: TStringField
+      FieldKind = fkData
+      FieldName = 'UF'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 2
+    end
+    object sqlFornecedorCEP: TStringField
+      FieldKind = fkData
+      FieldName = 'CEP'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object sqlFornecedorTELEFONE: TStringField
+      FieldKind = fkData
+      FieldName = 'TELEFONE'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+  end
+  object sqlBanco: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from Banco'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 176
+    Top = 112
+    object sqlBancoCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlBancoAGENCIA: TStringField
+      FieldKind = fkData
+      FieldName = 'AGENCIA'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+    object sqlBancoNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlBancoENDERECO: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDERECO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlBancoGERENTE: TStringField
+      FieldKind = fkData
+      FieldName = 'GERENTE'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlBancoCIDADE: TStringField
+      FieldKind = fkData
+      FieldName = 'CIDADE'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlBancoTELEFONE: TStringField
+      FieldKind = fkData
+      FieldName = 'TELEFONE'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+  end
+  object sqlCartorio: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from cartorio'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 248
+    Top = 112
+    object sqlCartorioCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlCartorioNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlCartorioGERENTE: TStringField
+      FieldKind = fkData
+      FieldName = 'GERENTE'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlCartorioTELEFONE: TStringField
+      FieldKind = fkData
+      FieldName = 'TELEFONE'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+  end
+  object sqlPlanoConta: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from PlanoConta'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 320
+    Top = 112
+    object sqlPlanoContaCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlPlanoContaDATA: TStringField
+      FieldKind = fkData
+      FieldName = 'DATA'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+    object sqlPlanoContaCREDITO: TStringField
+      FieldKind = fkData
+      FieldName = 'CREDITO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPlanoContaDEBITO: TStringField
+      FieldKind = fkData
+      FieldName = 'DEBITO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPlanoContaVALOR: TStringField
+      FieldKind = fkData
+      FieldName = 'VALOR'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPlanoContaDESCRICAO: TStringField
+      FieldKind = fkData
+      FieldName = 'DESCRICAO'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPlanoContaSTATUS: TStringField
+      FieldKind = fkData
+      FieldName = 'STATUS'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+  end
+  object sqlLancamento: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from LANCAMENTOCONTABIL'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 408
+    Top = 112
+    object sqlLancamentoCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlLancamentoCONTACREDITO: TStringField
+      FieldKind = fkData
+      FieldName = 'CONTACREDITO'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlLancamentoCONTADEBITO: TStringField
+      FieldKind = fkData
+      FieldName = 'CONTADEBITO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlLancamentoVALOR: TStringField
+      FieldKind = fkData
+      FieldName = 'VALOR'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object sqlLancamentoDESCRICAO: TStringField
+      FieldKind = fkData
+      FieldName = 'DESCRICAO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object sqlDespesa: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from DESPESAS'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 488
+    Top = 112
+    object sqlDespesaCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlDespesaLANCAMENTO: TStringField
+      FieldKind = fkData
+      FieldName = 'LANCAMENTO'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlDespesaDATALANCAMENTO: TStringField
+      FieldKind = fkData
+      FieldName = 'DATALANCAMENTO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlDespesaDATAPREVISTA: TStringField
+      FieldKind = fkData
+      FieldName = 'DATAPREVISTA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sqlDespesaPAGAMENTO: TStringField
+      FieldKind = fkData
+      FieldName = 'PAGAMENTO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlDespesaVALORPREVISTO: TStringField
+      FieldKind = fkData
+      FieldName = 'VALORPREVISTO'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlDespesaDESCRICAO: TStringField
+      FieldKind = fkData
+      FieldName = 'DESCRICAO'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object sqlRecebimento: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from RECEBIMENTO'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 568
+    Top = 112
+    object sqlRecebimentoCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlRecebimentoNOMECLIENTE: TStringField
+      FieldKind = fkData
+      FieldName = 'NOMECLIENTE'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRecebimentoNOMETITULO: TStringField
+      FieldKind = fkData
+      FieldName = 'NOMETITULO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRecebimentoDATAEMISSAO: TStringField
+      FieldKind = fkData
+      FieldName = 'DATAEMISSAO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRecebimentoDATAVENCIMENTO: TStringField
+      FieldKind = fkData
+      FieldName = 'DATAVENCIMENTO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRecebimentoDATARECEBIMENTO: TStringField
+      FieldKind = fkData
+      FieldName = 'DATARECEBIMENTO'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRecebimentoVALIDADEDESC: TStringField
+      FieldKind = fkData
+      FieldName = 'VALIDADEDESC'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object sqlRecebimentoVALIDADETITULO: TStringField
+      FieldKind = fkData
+      FieldName = 'VALIDADETITULO'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRecebimentoVALORDESC: TStringField
+      FieldKind = fkData
+      FieldName = 'VALORDESC'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRecebimentoVALORACRES: TStringField
+      FieldKind = fkData
+      FieldName = 'VALORACRES'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object sqlRemessa: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from REMESSA'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 640
+    Top = 112
+    object sqlRemessaCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlRemessaCARTORIO: TStringField
+      FieldKind = fkData
+      FieldName = 'CARTORIO'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRemessaNUMEROTITULO: TStringField
+      FieldKind = fkData
+      FieldName = 'NUMEROTITULO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRemessaREMESSA: TStringField
+      FieldKind = fkData
+      FieldName = 'REMESSA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRemessaPROTESTO: TStringField
+      FieldKind = fkData
+      FieldName = 'PROTESTO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRemessaBAIXA: TStringField
+      FieldKind = fkData
+      FieldName = 'BAIXA'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlRemessaTELEFONE: TStringField
+      FieldKind = fkData
+      FieldName = 'TELEFONE'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+  end
+  object DszCliente: TDataSource
+    DataSet = sqlCliente
+    Left = 32
+    Top = 180
+  end
+  object DszFornecedor: TDataSource
+    DataSet = sqlFornecedor
+    Left = 104
+    Top = 180
+  end
+  object DszBanco: TDataSource
+    DataSet = sqlBanco
+    Left = 176
+    Top = 180
+  end
+  object DszCartorio: TDataSource
+    DataSet = sqlCartorio
+    Left = 248
+    Top = 180
+  end
+  object DszPlanoConta: TDataSource
+    DataSet = sqlPlanoConta
+    Left = 320
+    Top = 180
+  end
+  object DszLancamento: TDataSource
+    DataSet = sqlLancamento
+    Left = 408
+    Top = 180
+  end
+  object DszDespesa: TDataSource
+    DataSet = sqlDespesa
+    Left = 488
+    Top = 180
+  end
+  object DszRecebimento: TDataSource
+    DataSet = sqlRecebimento
+    Left = 568
+    Top = 180
+  end
+  object DszRemessa: TDataSource
+    DataSet = sqlRemessa
+    Left = 640
+    Top = 180
+  end
+end

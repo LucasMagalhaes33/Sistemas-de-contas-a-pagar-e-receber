@@ -1,0 +1,65 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 262
+  Height = 459
+  Top = 127
+  Width = 708
+  Caption = 'CADASTRO GERAL'
+  Menu = MainMenu1
+  LCLVersion = '2.0.12.0'
+  object MainMenu1: TMainMenu
+    Left = 296
+    Top = 144
+    object MenuItem1: TMenuItem
+      Caption = 'CADASTRO'
+      object MenuItem2: TMenuItem
+        Caption = 'CLIENTE'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'FORNECEDOR'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'BANCO'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'CARTORIO'
+        OnClick = MenuItem5Click
+      end
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'CONTAS'
+      object MenuItem7: TMenuItem
+        Caption = 'PLANO DE CONTAS'
+        OnClick = MenuItem7Click
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'LANÇAMENTO'
+        OnClick = MenuItem8Click
+      end
+    end
+    object MenuItem9: TMenuItem
+      Caption = 'CONTAS A PAGAR'
+      object MenuItem10: TMenuItem
+        Caption = 'DESPESAS'
+        OnClick = MenuItem10Click
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'PAGAMENTO'
+        OnClick = MenuItem11Click
+      end
+    end
+    object MenuItem12: TMenuItem
+      Caption = 'CONTAS A RECEBER'
+      object MenuItem13: TMenuItem
+        Caption = 'RECEBIMENTO'
+        OnClick = MenuItem13Click
+      end
+      object MenuItem14: TMenuItem
+        Caption = 'REMESSA'
+        OnClick = MenuItem14Click
+      end
+    end
+  end
+end

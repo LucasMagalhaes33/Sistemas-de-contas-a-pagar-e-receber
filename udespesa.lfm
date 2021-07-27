@@ -1,0 +1,227 @@
+object frmDespesas: TfrmDespesas
+  Left = 262
+  Height = 355
+  Top = 127
+  Width = 794
+  Caption = 'CADASTRO DE DESPESAS'
+  ClientHeight = 355
+  ClientWidth = 794
+  LCLVersion = '2.0.12.0'
+  object TABELA: TPageControl
+    Left = 0
+    Height = 355
+    Top = 0
+    Width = 794
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TABELA'
+      ClientHeight = 327
+      ClientWidth = 786
+      object Panel1: TPanel
+        Left = 0
+        Height = 50
+        Top = 0
+        Width = 786
+        Align = alTop
+        ClientHeight = 50
+        ClientWidth = 786
+        TabOrder = 0
+        object edtPesquisa: TEdit
+          Left = 24
+          Height = 23
+          Top = 16
+          Width = 280
+          TabOrder = 0
+        end
+        object btnPesquisa: TButton
+          Left = 344
+          Height = 25
+          Top = 14
+          Width = 75
+          Caption = 'PESQUISA'
+          OnClick = btnPesquisaClick
+          TabOrder = 1
+        end
+      end
+      object DBGrid1: TDBGrid
+        Left = 0
+        Height = 277
+        Top = 50
+        Width = 786
+        Align = alClient
+        Color = clWindow
+        Columns = <>
+        DataSource = zeosGlobal.DszDespesa
+        TabOrder = 1
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'CADASTRO'
+      ClientHeight = 327
+      ClientWidth = 786
+      object Label1: TLabel
+        Left = 104
+        Height = 15
+        Top = 35
+        Width = 45
+        Alignment = taRightJustify
+        Caption = 'CÓDIGO'
+        ParentColor = False
+      end
+      object DBEdit1: TDBEdit
+        Left = 168
+        Height = 23
+        Top = 27
+        Width = 24
+        DataField = 'CODIGO'
+        DataSource = zeosGlobal.DszDespesa
+        Alignment = taRightJustify
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 68
+        Height = 15
+        Top = 64
+        Width = 81
+        Alignment = taRightJustify
+        Caption = 'LANÇAMENTO'
+        ParentColor = False
+      end
+      object DBEdit2: TDBEdit
+        Left = 168
+        Height = 23
+        Top = 56
+        Width = 384
+        DataField = 'LANCAMENTO'
+        DataSource = zeosGlobal.DszDespesa
+        CharCase = ecNormal
+        MaxLength = 20
+        TabOrder = 1
+      end
+      object Label3: TLabel
+        Left = 14
+        Height = 15
+        Top = 91
+        Width = 135
+        Alignment = taRightJustify
+        Caption = 'DATA DO LANÇAMENTO'
+        ParentColor = False
+      end
+      object DBEdit3: TDBEdit
+        Left = 168
+        Height = 23
+        Top = 83
+        Width = 384
+        DataField = 'DATALANCAMENTO'
+        DataSource = zeosGlobal.DszDespesa
+        CharCase = ecNormal
+        MaxLength = 20
+        TabOrder = 2
+      end
+      object Label4: TLabel
+        Left = 64
+        Height = 15
+        Top = 119
+        Width = 85
+        Alignment = taRightJustify
+        Caption = 'DATA PREVISTA'
+        ParentColor = False
+      end
+      object DBEdit4: TDBEdit
+        Left = 168
+        Height = 23
+        Top = 111
+        Width = 216
+        DataField = 'DATAPREVISTA'
+        DataSource = zeosGlobal.DszDespesa
+        CharCase = ecNormal
+        MaxLength = 20
+        TabOrder = 3
+      end
+      object Label5: TLabel
+        Left = 22
+        Height = 15
+        Top = 144
+        Width = 127
+        Alignment = taRightJustify
+        Caption = 'DATA DO PAGAMENTO'
+        ParentColor = False
+      end
+      object DBEdit5: TDBEdit
+        Left = 168
+        Height = 23
+        Top = 139
+        Width = 216
+        DataField = 'PAGAMENTO'
+        DataSource = zeosGlobal.DszDespesa
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 4
+      end
+      object Label6: TLabel
+        Left = 86
+        Height = 15
+        Top = 203
+        Width = 63
+        Alignment = taRightJustify
+        Caption = 'DESCRIÇÃO'
+        ParentColor = False
+      end
+      object DBEdit6: TDBEdit
+        Left = 168
+        Height = 23
+        Top = 168
+        Width = 104
+        DataField = 'VALORPREVISTO'
+        DataSource = zeosGlobal.DszDespesa
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 5
+      end
+      object Label7: TLabel
+        Left = 57
+        Height = 15
+        Top = 176
+        Width = 92
+        Alignment = taRightJustify
+        Caption = 'VALOR PREVISTO'
+        ParentColor = False
+      end
+      object DBEdit7: TDBEdit
+        Left = 168
+        Height = 23
+        Top = 195
+        Width = 384
+        DataField = 'DESCRICAO'
+        DataSource = zeosGlobal.DszDespesa
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 6
+      end
+      object DBNavigator1: TDBNavigator
+        Left = 0
+        Height = 40
+        Top = 287
+        Width = 786
+        Align = alBottom
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 40
+        ClientWidth = 786
+        DataSource = zeosGlobal.DszDespesa
+        Options = []
+        TabOrder = 7
+      end
+    end
+  end
+end

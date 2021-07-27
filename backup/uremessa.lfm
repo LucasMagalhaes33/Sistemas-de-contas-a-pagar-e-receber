@@ -1,0 +1,227 @@
+object frmRemessa: TfrmRemessa
+  Left = 262
+  Height = 380
+  Top = 127
+  Width = 637
+  Caption = 'Remessa de título para cartório'
+  ClientHeight = 380
+  ClientWidth = 637
+  LCLVersion = '2.0.12.0'
+  object TABELA: TPageControl
+    Left = 0
+    Height = 380
+    Top = 0
+    Width = 637
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TABELA'
+      ClientHeight = 352
+      ClientWidth = 629
+      object Panel1: TPanel
+        Left = 0
+        Height = 50
+        Top = 0
+        Width = 629
+        Align = alTop
+        ClientHeight = 50
+        ClientWidth = 629
+        TabOrder = 0
+        object edtPesquisa: TEdit
+          Left = 24
+          Height = 23
+          Top = 16
+          Width = 280
+          TabOrder = 0
+        end
+        object btnPesquisa: TButton
+          Left = 344
+          Height = 25
+          Top = 14
+          Width = 75
+          Caption = 'PESQUISA'
+          OnClick = btnPesquisaClick
+          TabOrder = 1
+        end
+      end
+      object DBGrid1: TDBGrid
+        Left = 0
+        Height = 302
+        Top = 50
+        Width = 629
+        Align = alClient
+        Color = clWindow
+        Columns = <>
+        DataSource = zeosGlobal.DszRemessa
+        TabOrder = 1
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'CADASTRO'
+      ClientHeight = 352
+      ClientWidth = 629
+      object Label1: TLabel
+        Left = 80
+        Height = 15
+        Top = 40
+        Width = 45
+        Alignment = taRightJustify
+        Caption = 'CÓDIGO'
+        ParentColor = False
+      end
+      object DBEdit1: TDBEdit
+        Left = 152
+        Height = 23
+        Top = 32
+        Width = 24
+        DataField = 'CODIGO'
+        DataSource = zeosGlobal.DszRemessa
+        Alignment = taRightJustify
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 67
+        Height = 15
+        Top = 64
+        Width = 58
+        Alignment = taRightJustify
+        Caption = 'CARTÓRIO'
+        ParentColor = False
+      end
+      object DBEdit2: TDBEdit
+        Left = 152
+        Height = 23
+        Top = 56
+        Width = 384
+        DataField = 'CARTORIO'
+        DataSource = zeosGlobal.DszRemessa
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 1
+      end
+      object Label3: TLabel
+        Left = 12
+        Height = 15
+        Top = 88
+        Width = 113
+        Alignment = taRightJustify
+        Caption = 'NUMERO DO TÍTULO'
+        ParentColor = False
+      end
+      object DBEdit3: TDBEdit
+        Left = 152
+        Height = 23
+        Top = 80
+        Width = 128
+        DataField = 'NUMEROTITULO'
+        DataSource = zeosGlobal.DszRemessa
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 2
+      end
+      object Label4: TLabel
+        Left = 22
+        Height = 15
+        Top = 112
+        Width = 103
+        Alignment = taRightJustify
+        Caption = 'DATA DA REMESSA'
+        ParentColor = False
+      end
+      object DBEdit4: TDBEdit
+        Left = 152
+        Height = 23
+        Top = 104
+        Width = 128
+        DataField = 'REMESSA'
+        DataSource = zeosGlobal.DszRemessa
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 3
+      end
+      object Label5: TLabel
+        Left = 13
+        Height = 15
+        Top = 136
+        Width = 112
+        Alignment = taRightJustify
+        Caption = 'DATA DO PROTESTO'
+        ParentColor = False
+      end
+      object DBEdit5: TDBEdit
+        Left = 152
+        Height = 23
+        Top = 128
+        Width = 128
+        DataField = 'PROTESTO'
+        DataSource = zeosGlobal.DszRemessa
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 4
+      end
+      object Label6: TLabel
+        Left = 70
+        Height = 15
+        Top = 184
+        Width = 55
+        Alignment = taRightJustify
+        Caption = 'TELEFONE'
+        ParentColor = False
+      end
+      object DBEdit6: TDBEdit
+        Left = 152
+        Height = 23
+        Top = 152
+        Width = 128
+        DataField = 'BAIXA'
+        DataSource = zeosGlobal.DszRemessa
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 5
+      end
+      object Label7: TLabel
+        Left = 39
+        Height = 15
+        Top = 160
+        Width = 86
+        Alignment = taRightJustify
+        Caption = 'DATA DA BAIXA'
+        ParentColor = False
+      end
+      object DBEdit7: TDBEdit
+        Left = 152
+        Height = 23
+        Top = 176
+        Width = 128
+        DataField = 'TELEFONE'
+        DataSource = zeosGlobal.DszRemessa
+        CharCase = ecNormal
+        MaxLength = 15
+        TabOrder = 6
+      end
+      object DBNavigator1: TDBNavigator
+        Left = 0
+        Height = 40
+        Top = 312
+        Width = 629
+        Align = alBottom
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 40
+        ClientWidth = 629
+        DataSource = zeosGlobal.DszRemessa
+        Options = []
+        TabOrder = 7
+      end
+    end
+  end
+end
