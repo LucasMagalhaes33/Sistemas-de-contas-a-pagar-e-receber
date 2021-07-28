@@ -15,7 +15,7 @@ object zeosGlobal: TzeosGlobal
     Connected = True
     HostName = 'localhost'
     Port = 3050
-    Database = 'C:\Users\dosplasticos\Documents\lazarus\ContasPeR\Dados\DADOS.FDB'
+    Database = 'C:\Users\lucas\OneDrive\Documents\Lazarus\ContasPagarReceber\Dados\BDADOS.FDB'
     User = 'SYSDBA'
     Password = 'masterkey'
     Protocol = 'firebird-3.0'

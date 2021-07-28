@@ -2,7 +2,7 @@ object zeosGlobal: TzeosGlobal
   Left = 262
   Height = 383
   Top = 127
-  Width = 734
+  Width = 808
   Caption = 'zeosGlobal'
   LCLVersion = '2.0.12.0'
   object zConexao: TZConnection
@@ -15,7 +15,7 @@ object zeosGlobal: TzeosGlobal
     Connected = True
     HostName = 'localhost'
     Port = 3050
-    Database = 'C:\Users\dosplasticos\Documents\lazarus\ContasPeR\Dados\DADOS.FDB'
+    Database = 'C:\Users\lucas\OneDrive\Documents\Lazarus\ContasPagarReceber\Dados\BDADOS.FDB'
     User = 'SYSDBA'
     Password = 'masterkey'
     Protocol = 'firebird-3.0'
@@ -565,7 +565,7 @@ object zeosGlobal: TzeosGlobal
     Params = <>
     UpdateMode = umUpdateAll
     WhereMode = wmWhereAll
-    Left = 568
+    Left = 648
     Top = 112
     object sqlRecebimentoCODIGO: TLongintField
       FieldKind = fkData
@@ -676,7 +676,7 @@ object zeosGlobal: TzeosGlobal
     Params = <>
     UpdateMode = umUpdateAll
     WhereMode = wmWhereAll
-    Left = 640
+    Left = 728
     Top = 112
     object sqlRemessaCODIGO: TLongintField
       FieldKind = fkData
@@ -785,12 +785,118 @@ object zeosGlobal: TzeosGlobal
   end
   object DszRecebimento: TDataSource
     DataSet = sqlRecebimento
-    Left = 568
+    Left = 648
     Top = 180
   end
   object DszRemessa: TDataSource
     DataSet = sqlRemessa
-    Left = 640
+    Left = 728
+    Top = 180
+  end
+  object sqlPagamento: TZQuery
+    Connection = zConexao
+    Active = True
+    SQL.Strings = (
+      'select * from PAGAMENTO'
+    )
+    Params = <>
+    UpdateMode = umUpdateAll
+    WhereMode = wmWhereAll
+    Left = 560
+    Top = 112
+    object sqlPagamentoCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object sqlPagamentoFORNECEDOR: TStringField
+      FieldKind = fkData
+      FieldName = 'FORNECEDOR'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object sqlPagamentoDATAEMISSAO: TStringField
+      FieldKind = fkData
+      FieldName = 'DATAEMISSAO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPagamentoDATAVENCIMENTO: TStringField
+      FieldKind = fkData
+      FieldName = 'DATAVENCIMENTO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPagamentoDATAPGTO: TStringField
+      FieldKind = fkData
+      FieldName = 'DATAPGTO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPagamentoDATADESC: TStringField
+      FieldKind = fkData
+      FieldName = 'DATADESC'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sqlPagamentoVALORTITULO: TStringField
+      FieldKind = fkData
+      FieldName = 'VALORTITULO'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object sqlPagamentoVALORDESC: TStringField
+      FieldKind = fkData
+      FieldName = 'VALORDESC'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object sqlPagamentoVALORACRES: TStringField
+      FieldKind = fkData
+      FieldName = 'VALORACRES'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object DszPagamento: TDataSource
+    DataSet = sqlPagamento
+    Left = 560
     Top = 180
   end
 end

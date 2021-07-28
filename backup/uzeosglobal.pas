@@ -13,6 +13,7 @@ type
   { TzeosGlobal }
 
   TzeosGlobal = class(TForm)
+    DszPagamento: TDataSource;
     DszRemessa: TDataSource;
     DszRecebimento: TDataSource;
     DszDespesa: TDataSource;
@@ -61,6 +62,15 @@ type
     sqlLancamentoCONTADEBITO: TStringField;
     sqlLancamentoDESCRICAO: TStringField;
     sqlLancamentoVALOR: TStringField;
+    sqlPagamentoCODIGO: TLongintField;
+    sqlPagamentoDATADESC: TStringField;
+    sqlPagamentoDATAEMISSAO: TStringField;
+    sqlPagamentoDATAPGTO: TStringField;
+    sqlPagamentoDATAVENCIMENTO: TStringField;
+    sqlPagamentoFORNECEDOR: TStringField;
+    sqlPagamentoVALORACRES: TStringField;
+    sqlPagamentoVALORDESC: TStringField;
+    sqlPagamentoVALORTITULO: TStringField;
     sqlPlanoContaCODIGO: TLongintField;
     sqlPlanoContaCREDITO: TStringField;
     sqlPlanoContaDATA: TStringField;
@@ -95,6 +105,7 @@ type
     sqlDespesa: TZQuery;
     sqlRecebimento: TZQuery;
     sqlRemessa: TZQuery;
+    sqlPagamento: TZQuery;
   private
 
   public

@@ -19,6 +19,8 @@ type
     MenuItem12: TMenuItem;
     MenuItem13: TMenuItem;
     MenuItem14: TMenuItem;
+    MenuItem15: TMenuItem;
+    MenuItem16: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
@@ -31,6 +33,7 @@ type
     procedure MenuItem11Click(Sender: TObject);
     procedure MenuItem13Click(Sender: TObject);
     procedure MenuItem14Click(Sender: TObject);
+    procedure MenuItem16Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
@@ -47,7 +50,7 @@ var
   frmPrincipal: TfrmPrincipal;
 
 implementation
-   uses uCliente, uFornecedor, uBanco, uCartorio, uPlanoConta, uLancamentos, uDespesa, uPagamento, uRecebimento, uRemessa;
+   uses uCliente, uFornecedor, uBanco, uCartorio, uPlanoConta, uLancamentos, uDespesa, uPagamento, uRecebimento, uRemessa, urelcli;
 {$R *.lfm}
 
    { TfrmPrincipal }
@@ -74,7 +77,18 @@ end;
 
 procedure TfrmPrincipal.MenuItem14Click(Sender: TObject);
 begin
+   frmRemessa.ShowModal;
+end;
 
+procedure TfrmPrincipal.MenuItem16Click(Sender: TObject);
+begin
+   try
+       frmRelCli := TfrmRelCli.Create(nil);
+       frmRelCli.Showmodal;
+   finally
+       if Assigned(frmRelCli) then
+       FreeAndNil(frmRelCli);
+   end;
 end;
 
 procedure TfrmPrincipal.MenuItem3Click(Sender: TObject);

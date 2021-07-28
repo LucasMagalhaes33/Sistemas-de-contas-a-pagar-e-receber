@@ -61,5 +61,12 @@ object frmPrincipal: TfrmPrincipal
         OnClick = MenuItem14Click
       end
     end
+    object MenuItem15: TMenuItem
+      Caption = 'RELATÓRIOS'
+      object MenuItem16: TMenuItem
+        Caption = 'CLIENTE'
+        OnClick = MenuItem16Click
+      end
+    end
   end
 end

@@ -9,7 +9,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, zcomponent, uPrincipal, uzeosglobal, uCliente, uFornecedor, uBanco,
   uCartorio, uPlanoConta, uLancamentos, uDespesa, uPagamento, uRecebimento,
-  uRemessa
+  uRemessa, uRelCli
   { you can add units after this };
 
 {$R *.res}
@@ -30,6 +30,7 @@ begin
   Application.CreateForm(TfrmPagamento, frmPagamento);
   Application.CreateForm(TfrmRecebimento, frmRecebimento);
   Application.CreateForm(TfrmRemessa, frmRemessa);
+  Application.CreateForm(TfrmRelCli, frmRelCli);
   Application.Run;
 end.
 

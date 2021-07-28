@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="18">
+    <Units Count="19">
       <Unit0>
         <Filename Value="PagarReceber.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -12,18 +12,18 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="24"/>
       </Unit0>
       <Unit1>
         <Filename Value="uprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPrincipal"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="57"/>
-        <CursorPos X="24" Y="77"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="70"/>
+        <CursorPos X="28" Y="90"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -31,15 +31,156 @@
         <Filename Value="uzeosglobal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="zeosGlobal"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="33"/>
-        <CursorPos X="24" Y="54"/>
-        <UsageCount Value="20"/>
+        <CursorPos X="15" Y="56"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
+        <Filename Value="ucliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCliente"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCliente"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="44"/>
+        <CursorPos X="114" Y="56"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="ufornecedor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFornecedor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFornecedor"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="43"/>
+        <CursorPos X="35" Y="65"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="ubanco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBanco"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uBanco"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="38"/>
+        <CursorPos X="110" Y="44"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="ucartorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCartorio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCartorio"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="36"/>
+        <CursorPos X="33" Y="57"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="uplanoconta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPlanoConta"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPlanoConta"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="38"/>
+        <CursorPos X="63" Y="58"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="ulancamentos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLancamento"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uLancamentos"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="34"/>
+        <CursorPos X="71" Y="54"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="udespesa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDespesas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDespesa"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="38"/>
+        <CursorPos X="109" Y="46"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="upagamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPagamento"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPagamento"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="31"/>
+        <CursorPos X="57" Y="64"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="urecebimento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRecebimento"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRecebimento"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="44"/>
+        <CursorPos X="60" Y="66"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="uremessa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRemessa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRemessa"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="38"/>
+        <CursorPos X="16" Y="52"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit12>
+      <Unit13>
         <Filename Value="..\CVENDAS\ucliente.pas"/>
         <ComponentName Value="frmClientes"/>
         <HasResources Value="True"/>
@@ -49,237 +190,173 @@
         <TopLine Value="43"/>
         <CursorPos X="30" Y="65"/>
         <UsageCount Value="10"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="ucliente.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmCliente"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uCliente"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="44"/>
-        <CursorPos X="5" Y="58"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit4>
-      <Unit5>
+      </Unit13>
+      <Unit14>
         <Filename Value="..\ContasPeR\uClientes.pas"/>
         <UnitName Value="uZeosGlobal"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-      </Unit5>
-      <Unit6>
-        <Filename Value="ufornecedor.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmFornecedor"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uFornecedor"/>
-        <EditorIndex Value="8"/>
-        <TopLine Value="43"/>
-        <CursorPos X="35" Y="65"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit6>
-      <Unit7>
-        <Filename Value="ubanco.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmBanco"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uBanco"/>
-        <EditorIndex Value="9"/>
-        <TopLine Value="38"/>
-        <CursorPos X="110" Y="44"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit7>
-      <Unit8>
-        <Filename Value="ucartorio.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmCartorio"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uCartorio"/>
-        <EditorIndex Value="10"/>
-        <TopLine Value="36"/>
-        <CursorPos X="33" Y="57"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit8>
-      <Unit9>
-        <Filename Value="uplanoconta.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmPlanoConta"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uPlanoConta"/>
-        <EditorIndex Value="11"/>
-        <TopLine Value="38"/>
-        <CursorPos X="63" Y="58"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit9>
-      <Unit10>
-        <Filename Value="ulancamentos.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmLancamento"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uLancamentos"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="34"/>
-        <CursorPos X="71" Y="54"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit10>
-      <Unit11>
+      </Unit14>
+      <Unit15>
         <Filename Value="..\..\..\AppData\Local\lazarus\onlinepackagemanager\packages\zeosdbo\src\dbc\ZDbcGenericResolver.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="862"/>
         <CursorPos Y="874"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit11>
-      <Unit12>
+      </Unit15>
+      <Unit16>
         <Filename Value="..\..\..\AppData\Local\lazarus\onlinepackagemanager\packages\zeosdbo\src\dbc\ZDbcUtils.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="400"/>
-        <CursorPos X="40" Y="411"/>
+        <CursorPos X="53" Y="413"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit12>
-      <Unit13>
+      </Unit16>
+      <Unit17>
         <Filename Value="..\..\..\AppData\Local\lazarus\onlinepackagemanager\packages\zeosdbo\src\component\ZAbstractDataset.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="397"/>
-        <CursorPos X="86" Y="408"/>
+        <CursorPos Y="409"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit13>
-      <Unit14>
-        <Filename Value="udespesa.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmDespesas"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uDespesa"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="38"/>
-        <CursorPos X="109" Y="46"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit14>
-      <Unit15>
-        <Filename Value="upagamento.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmPagamento"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uPagamento"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="31"/>
-        <CursorPos X="57" Y="64"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit15>
-      <Unit16>
-        <Filename Value="urecebimento.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmRecebimento"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uRecebimento"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="44"/>
-        <CursorPos X="60" Y="66"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit16>
-      <Unit17>
-        <Filename Value="uremessa.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmRemessa"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uRemessa"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="38"/>
-        <CursorPos X="52" Y="60"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit17>
+      <Unit18>
+        <Filename Value="urelcli.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRelCli"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRelCli"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="17"/>
+        <CursorPos X="4" Y="37"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit18>
     </Units>
-    <JumpHistory Count="17" HistoryIndex="16">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="ucliente.pas"/>
-        <Caret Line="51" Column="21" TopLine="29"/>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="43" Column="38" TopLine="34"/>
       </Position1>
       <Position2>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="41" Column="18" TopLine="19"/>
+        <Caret Line="61" Column="22" TopLine="40"/>
       </Position2>
       <Position3>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="48" Column="18" TopLine="27"/>
+        <Caret Line="45" Column="62" TopLine="43"/>
       </Position3>
       <Position4>
-        <Filename Value="ufornecedor.pas"/>
-        <Caret Line="4" Column="38"/>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="73" Column="26" TopLine="48"/>
       </Position4>
       <Position5>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="49" Column="26" TopLine="27"/>
+        <Caret Line="78" Column="27" TopLine="57"/>
       </Position5>
       <Position6>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="43" Column="38" TopLine="34"/>
+        <Caret Line="78" Column="27" TopLine="57"/>
       </Position6>
       <Position7>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="61" Column="22" TopLine="40"/>
+        <Caret Line="84" Column="27" TopLine="63"/>
       </Position7>
       <Position8>
-        <Filename Value="uprincipal.pas"/>
-        <Caret Line="45" Column="62" TopLine="43"/>
+        <Filename Value="uzeosglobal.pas"/>
+        <Caret Line="48" Column="96" TopLine="32"/>
       </Position8>
       <Position9>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="73" Column="26" TopLine="48"/>
+        <Caret Line="48" Column="98" TopLine="37"/>
       </Position9>
       <Position10>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="78" Column="27" TopLine="57"/>
+        <Caret Line="49" Column="112" TopLine="49"/>
       </Position10>
       <Position11>
-        <Filename Value="uprincipal.pas"/>
-        <Caret Line="78" Column="27" TopLine="57"/>
+        <Filename Value="uremessa.pas"/>
+        <Caret Line="46" Column="82" TopLine="27"/>
       </Position11>
       <Position12>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="84" Column="27" TopLine="63"/>
+        <Caret Line="72" Column="28" TopLine="50"/>
       </Position12>
       <Position13>
-        <Filename Value="uzeosglobal.pas"/>
-        <Caret Line="48" Column="96" TopLine="32"/>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="77" Column="25" TopLine="72"/>
       </Position13>
       <Position14>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="48" Column="98" TopLine="37"/>
+        <Caret Line="78" Column="25" TopLine="73"/>
       </Position14>
       <Position15>
-        <Filename Value="uprincipal.pas"/>
-        <Caret Line="49" Column="112" TopLine="49"/>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="8" Column="9"/>
       </Position15>
       <Position16>
-        <Filename Value="uremessa.pas"/>
-        <Caret Line="46" Column="82" TopLine="27"/>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="9" Column="11"/>
       </Position16>
       <Position17>
-        <Filename Value="uprincipal.pas"/>
-        <Caret Line="72" Column="28" TopLine="50"/>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="29" Column="20" TopLine="8"/>
       </Position17>
+      <Position18>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="30" Column="20" TopLine="8"/>
+      </Position18>
+      <Position19>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="80" Column="25" TopLine="75"/>
+      </Position19>
+      <Position20>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="85" Column="7" TopLine="68"/>
+      </Position20>
+      <Position21>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="18" Column="34" TopLine="7"/>
+      </Position21>
+      <Position22>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="17" Column="36" TopLine="7"/>
+      </Position22>
+      <Position23>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="16" Column="30" TopLine="6"/>
+      </Position23>
+      <Position24>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="17" Column="34" TopLine="6"/>
+      </Position24>
+      <Position25>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="16" Column="30" TopLine="6"/>
+      </Position25>
+      <Position26>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="17" Column="34" TopLine="6"/>
+      </Position26>
+      <Position27>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="18" Column="34" TopLine="6"/>
+      </Position27>
+      <Position28>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="32" Column="15" TopLine="8"/>
+      </Position28>
+      <Position29>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="17" Column="62" TopLine="8"/>
+      </Position29>
+      <Position30>
+        <Filename Value="urelcli.pas"/>
+        <Caret Line="37" Column="14" TopLine="17"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

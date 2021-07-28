@@ -26,18 +26,24 @@
       <FormatVersion Value="2"/>
       <Modes Count="0"/>
     </RunParams>
-    <RequiredPackages Count="3">
+    <RequiredPackages Count="5">
       <Item1>
-        <PackageName Value="FCL"/>
+        <PackageName Value="frce"/>
       </Item1>
       <Item2>
-        <PackageName Value="zcomponent"/>
+        <PackageName Value="lazreport"/>
       </Item2>
       <Item3>
-        <PackageName Value="LCL"/>
+        <PackageName Value="FCL"/>
       </Item3>
+      <Item4>
+        <PackageName Value="zcomponent"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
     </RequiredPackages>
-    <Units Count="13">
+    <Units Count="14">
       <Unit0>
         <Filename Value="PagarReceber.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -46,6 +52,7 @@
         <Filename Value="uprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPrincipal"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
       </Unit1>
@@ -53,12 +60,14 @@
         <Filename Value="uzeosglobal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="zeosGlobal"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit2>
       <Unit3>
         <Filename Value="ucliente.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmCliente"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uCliente"/>
       </Unit3>
@@ -66,6 +75,7 @@
         <Filename Value="ufornecedor.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmFornecedor"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFornecedor"/>
       </Unit4>
@@ -73,6 +83,7 @@
         <Filename Value="ubanco.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmBanco"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uBanco"/>
       </Unit5>
@@ -80,6 +91,7 @@
         <Filename Value="ucartorio.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmCartorio"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uCartorio"/>
       </Unit6>
@@ -87,6 +99,7 @@
         <Filename Value="uplanoconta.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPlanoConta"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPlanoConta"/>
       </Unit7>
@@ -94,6 +107,7 @@
         <Filename Value="ulancamentos.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmLancamento"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uLancamentos"/>
       </Unit8>
@@ -101,6 +115,7 @@
         <Filename Value="udespesa.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmDespesas"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uDespesa"/>
       </Unit9>
@@ -108,6 +123,7 @@
         <Filename Value="upagamento.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPagamento"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPagamento"/>
       </Unit10>
@@ -115,6 +131,7 @@
         <Filename Value="urecebimento.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmRecebimento"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uRecebimento"/>
       </Unit11>
@@ -122,9 +139,17 @@
         <Filename Value="uremessa.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmRemessa"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uRemessa"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="urelcli.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRelCli"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRelCli"/>
+      </Unit13>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

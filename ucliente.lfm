@@ -12,9 +12,9 @@ object frmCliente: TfrmCliente
     Height = 430
     Top = 0
     Width = 821
-    ActivePage = TabSheet1
+    ActivePage = TabSheet2
     Align = alClient
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'TABELA'
@@ -167,7 +167,7 @@ object frmCliente: TfrmCliente
         Left = 51
         Height = 15
         Top = 203
-        Width = 44
+        Width = 42
         Alignment = taRightJustify
         Caption = 'ESTADO'
         ParentColor = False
@@ -207,7 +207,7 @@ object frmCliente: TfrmCliente
         Left = 40
         Height = 15
         Top = 231
-        Width = 55
+        Width = 54
         Alignment = taRightJustify
         Caption = 'TELEFONE'
         ParentColor = False
